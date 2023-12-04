@@ -1,0 +1,7 @@
+html > div, html > div *, html > iframe {
+    display: none!important;
+}
+.removed-element {
+    border: 2px solid red !important;
+    width: 10px;
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Cardiff",
+  "version": "1.0",
+  "permissions": ["webNavigation", "activeTab", "scripting", "storage"],
+  "background": {
+//    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_icon": "images/icon-128.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
+}
